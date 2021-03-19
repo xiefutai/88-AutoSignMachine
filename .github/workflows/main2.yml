@@ -1,0 +1,22 @@
+name: merge-from-main
+on:
+  workflow_dispatch:
+jobs:
+  merge-branch:
+    env:
+      PAT: ${{ secrets.PAT }}
+    runs-on: ubuntu-latest
+    steps:  
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+
+      - name: Merge sync from main	
+        uses: devmasx/merge-branch@v1.3.1	
+        if: env.PAT	
+        with:	
+          type: now	
+          from_branch: main
+          target_branch: sync
+          github_token: ${{ secrets.PAT }}
