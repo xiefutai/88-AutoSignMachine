@@ -70,13 +70,8 @@ jobs:
       env:
         user: ${{secrets.unicom_user}}
         password: ${{secrets.unicom_password}}
-        appid: ${{secrets.unicom_appid}}        
         user2: ${{secrets.unicom_user2}}
         password2: ${{secrets.unicom_password2}}
-        appid2: ${{secrets.unicom_appid2}}
-        user3: ${{secrets.unicom_user3}}
-        password3: ${{secrets.unicom_password3}}
-        appid3: ${{secrets.unicom_appid3}}        
-        notify_tele_bottoken: ${{secrets.NOTIFY_TELE_BOTTOKEN}}
-        notify_tele_chatid: ${{secrets.NOTIFY_TELE_CHATID}}
-      run: node index.js unicom --accountSn=1,2,3 --user-1=${user} --password-1=${password} --appid-1=${appid} --user-2=${user2} --password-2=${password2} --appid-2=${appid2} --user-3=${user3} --password-3=${password3} --appid-3=${appid3}
+        appid: ${{secrets.unicom_appid}}
+        notify_sctkey: ${{secrets.NOTIFY_SCKEY}}
+      run: node index.js unicom --accountSn=1,2 --user-1=${user} --password-1=${password} --appid-1=${appid} --user-2=${user2} --password-2=${password2} --appid-2=${appid}
