@@ -79,4 +79,4 @@ jobs:
         appid3: ${{secrets.unicom_appid3}}        
         notify_tele_bottoken: ${{secrets.NOTIFY_TELE_BOTTOKEN}}
         notify_tele_chatid: ${{secrets.NOTIFY_TELE_CHATID}}
-      run: node index.js unicom --accountSn=1,2 --user-1=${user} --password-1=${password} --appid-1=${appid} --user-2=${user2} --password-2=${password2} --appid-2=${appid} --user-3=${user3} --password-3=${password3} --appid-3=${appid3}
+      run: node index.js unicom --accountSn=1,2,3 --user-1=${user} --password-1=${password} --appid-1=${appid} --user-2=${user2} --password-2=${password2} --appid-2=${appid} --user-3=${user3} --password-3=${password3} --appid-3=${appid3}
