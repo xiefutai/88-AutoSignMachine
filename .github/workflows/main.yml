@@ -21,7 +21,7 @@ jobs:
 
     - name: Clone Main
       run: |
-        git clone -b main simo8102/88-AutoSignMachine.git main
+        git clone -b main git@github.com:simo8102/88-AutoSignMachine.git main
 
     - name: Push Main
       uses: ad-m/github-push-action@master
