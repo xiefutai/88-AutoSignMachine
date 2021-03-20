@@ -1,4 +1,4 @@
-name: 联通挂机任务积分脚本
+name: 挂机1
 
 
 on:
@@ -79,5 +79,6 @@ jobs:
         user: ${{secrets.unicom_user}}
         password: ${{secrets.unicom_password}}
         appid: ${{secrets.unicom_appid}}
-        notify_sctkey: ${{secrets.NOTIFY_SCKEY}}
+        notify_tele_bottoken: ${{secrets.TELE_BOTTOKEN}}
+        notify_tele_chatid: ${{secrets.NOTIFY_TELE_CHATID}}
       run: node index.js unicom --user=${user} --password=${password} --appid=${appid} 
