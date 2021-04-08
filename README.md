@@ -8,7 +8,7 @@ ENABLE_UNICOM（填true）
 
 NOTIFY_SCKEY（Server酱的key）
 
-unicom_appid（http://m.client.10010.com/mobileService/customer/getclientconfig.htm?appId= 开抓包 你再打开手厅就能找到了）
+unicom_appid（http://m.client.10010.com/mobileService/customer/getclientconfig.htm?appId= 开抓包 你再打开手厅就能找到了!）
 
 unicom_user1（手机号）
 
